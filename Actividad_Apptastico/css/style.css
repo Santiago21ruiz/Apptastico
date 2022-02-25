@@ -1,0 +1,460 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Encabezado */
+header{
+    background-color: #4c5b66;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 300px;
+    align-items: center;
+}
+li{
+    list-style: none;
+    color: white;
+}
+.home{
+    background-color: #3c464f;
+    border-radius: 30px;
+    padding: 10px;
+    width: 61px;
+    text-align: center;
+}
+
+/* --------------------- */
+
+/* Primer section */
+.PrimerContenedor{
+    background-color: #4c5b66;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 130px;
+}
+.imgIphone{
+    width: 440px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 123;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left:45%;
+      width:100%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
+.primerTexto{
+    width: 600px;
+}
+h1{
+    font-size: 60px;
+    color: white;
+    position: relative;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 8s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;   
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 9em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+.primerParrafo{
+    color:#dcdcdc;
+}
+.segParrafo{
+    color:#a0a0a0;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    width: 420px;
+    align-items: center;
+    color: white;
+}
+.primerBoton{
+    background-color: #3e96d2;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid #6cc4ff;
+    height: 40px;
+    width: 175px;
+}
+.primerBoton:hover{
+    background-color: #326a97;
+    height: 42px;
+    width: 179px;
+    border: 2px solid #002849;
+}
+.imgTexto{
+    text-decoration: underline;
+}
+/* ------------------- */
+
+/* SEGUNDO CONTENEDOR */
+.segContenedor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    background-color: #eaeaea;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #c3c3c3;
+    position: sticky;
+    top: 68px;
+}
+.dummy{
+    transition: width 4s, height 4s, background-color 2s, transform 2s;
+}
+.dummy:hover{
+    transform: rotate(360deg);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* TERCER CONTENEDOR */
+.tercerContenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+.cuadros{
+    width: 400px;
+}
+h2{
+    color: #4b5a65;
+}
+.parrafos{
+    color: #a4a4a4;
+}
+.read{
+    background-color: #4e94cd;
+    border-radius: 4px;
+    border: 1px solid #76aedb;
+    color: white;
+    padding: 10px;
+    width: 135px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* CUARTO CONTENEDOR */
+.cuartoContenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+}
+.Projects{
+    padding-left: 30px;
+}
+.imagenes{
+    height: 200px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px #b2b2b2;
+    transition: width 4s, height 4s, background-color 2s, transform 2s;
+}
+.imagenes:hover{
+    height: 200px;
+    transform: rotate(360deg);
+}
+.contImagenes{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* QUINTO CONTENEDOR */
+.quintoContenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    height: 515px;
+}
+.contIzquierda{
+    width: 700px;
+}
+.cuadrosImgText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.textos{
+    width: 400px;
+}
+.contDerecha{
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+.fotos{
+    height: 130px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px #b2b2b2;
+}
+#pellenteste{
+    color:hsl(205deg 62% 53%);
+}
+.Apptactico{
+    font-weight: 800;
+}
+.parrafos2{
+    color: #696969;
+}
+.fecha{
+    font-size: 11px;
+    color: #b4b4b4;
+}
+h3{
+    width: 190px;
+    display: grid;
+    grid-template-columns: 33px 1fr;
+}
+.textFinal{
+    color: hsl(205deg 62% 53%);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+hr{
+    width: 1250px;
+}
+/* FOOTER */
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+/* ++++++++++++++++++++++++++++++++ */
+
+
+/* MEDIA QUERIES */
+@media(max-width:1200px){
+    .primerTexto {
+        width: 520px;
+        font-size: 14px;
+    }
+    .imgIphone {
+        width: 400px;
+    }
+    .imagenes {
+        height: 140px;
+    }
+    .contIzquierda {
+        width: 600px;
+        padding-left: 35px;
+    }
+    .contDerecha {
+        width: 500px;
+    }
+    .fotos {
+        height: 100px;
+    }
+    .parrafos2 {
+        font-size: 14px;
+    }
+    .twitterText {
+        font-size: 15px;
+    }
+    hr {
+        width: 1000px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .cuadros {
+        width: 330px;
+    }
+}
+
+@media(max-width:768px){
+    .imgIphone {
+        width: 210px;
+    }
+    .primerTexto {
+        width: 405px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .primerParrafo {
+        font-size: 11px;
+    }
+    .segParrafo {
+        font-size: 11px;
+    }
+    .primerBoton {
+        height: 29px;
+        width: 133px;
+    }
+    .botones{
+        width: 322px;
+    }
+    .imgs {
+        width: 100px;
+    }
+    .cuadros {
+        width: 250px;
+    }
+    .imagenes {
+        height: 98px;
+    }
+    .contIzquierda {
+        width: 400px;
+        padding-left: 10px;
+    }
+    .fotos {
+        height: 70px;
+    }
+    .twitterText {
+        font-size: 12px;
+    }
+    .contDerecha {
+        width: 345px;
+        height: 500px;
+    }
+    .parrafos2 {
+        font-size: 12px;
+    }
+    hr {
+        width: 585px;
+    }
+    .textos{
+        width: 265px;
+    }
+    footer {
+        font-size: 13px;
+    }
+    .parrafos {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .cuartoContenedor{
+        padding: 30px 0;
+    }
+}
+
+@media(max-width:576px){
+    h1 {
+        font-size: 15px;
+    }
+    .primerParrafo {
+        font-size: 9px;
+    }
+    .segParrafo {
+        font-size: 9px;
+    }
+    .primerBoton{
+        font-size: 10px;
+        height: 20px;
+        width: 93px;
+    }
+    .botones {
+        width: 230px;
+        font-size: 10px;
+    }
+    .shape01{
+        height: 10px;
+    }
+    ul{
+        font-size: 15px;
+    }
+    .imgs {
+        width: 80px;
+    }
+    h2 {
+        font-size: 13px;
+    }
+    .parrafos {
+        font-size: 11px;
+    }
+    .read{
+        width: 95px;
+    }
+    .dummy {
+        height: 30px;
+    }
+    .cuadros {
+        width: 192px;
+    }
+    .imgIphone {
+        width: 140px;
+    }
+    .primerTexto {
+        width: 343px;
+    }
+    .imagenes {
+        height: 50px;
+    }
+    .contIzquierda {
+        width: 310px;
+    }
+    .contDerecha {
+        width: 266px;
+        height: 470px;
+    }
+    hr {
+        width: 465px;
+    }
+    footer {
+        font-size: 10px;
+    }
+    .redes {
+        height: 20px;
+    }
+    .textos {
+        width: 175px;
+    }
+    .parrafos2 {
+        font-size: 10px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .fecha {
+        font-size: 8px;
+    }
+    .twitterText {
+        font-size: 10px;
+    }
+    .textFinal {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
